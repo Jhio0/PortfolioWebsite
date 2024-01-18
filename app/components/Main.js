@@ -4,6 +4,7 @@ import {AiOutlineMail} from 'react-icons/ai'
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
 import { motion} from 'framer-motion'
 
+
 const Main = () => {
 
     return (
@@ -34,7 +35,8 @@ const Main = () => {
                             <AiOutlineMail />
                         </div>
                     </div>
-                </motion.div>        
+                </motion.div>
+                
             </div>
         </div>
     )
