@@ -19,15 +19,3 @@ const Projetcs = () => {
 }
 
 export default Projetcs 
-
-{/* <div className='grid md:grid-cols-2 gap-8'>
-
-<ProjectItem title='Property Finder' backgroundImg={propertyImg} projectUrl='/property' />
-
-<ProjectItem title='Crypto App' backgroundImg={CryptoImg} projectUrl='/property' />
-
-<ProjectItem title='Netflix Copy' backgroundImg={netflixImg} projectUrl='/property' />
-
-<ProjectItem title='Twitch' backgroundImg={twitchImg} projectUrl='/property' />
-
-</div> */}

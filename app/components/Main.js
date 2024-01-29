@@ -6,37 +6,60 @@ import { motion} from 'framer-motion'
 
 
 const Main = () => {
+    const text = "Coding visionary ready to bring your ideas to life.".split(" ");
+    const name = "Hi, I am Jhio".split(" ");
+    const jobDes = "A Software Developer".split("");
 
     return (
-        <div id='home' className='w-full h-screen text-center'>
-            <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
-                <motion.div
-                    variants={{
-                        hidden: {opacity: 0, y: 75},
-                        visible: {opacity: 1, y: 0},
-                    }}
-                    initial="hidden"
-                    animate="visible"
-                    transition={{duration: 0.5, delay: 0.30}}
-                >
-                    <p className='uppercase test-sm tracking-widest text-gray-600'>Lets Build Something Together</p>
-                    <h1 className='py-4 text-gray-700'>Hi, I am<span className='text-[#5651e5]'> Jhio</span></h1>
-                    <h1 className='py-2 text-gray-700'>A Software Developer</h1>
-                    <p className='py-4 text-gray-600 max-w-[70%] m-auto'>If youre looking for a shorthand way to generate Lorem Ipsum placeholder text in Visual Studio Code using the ES7 React/Redux/GraphQL/React-Native snippets extension, you can use the lorem snippet. Heres how you can do it:</p>
-                    <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                        
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaLinkedinIn />
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaGithub />
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <AiOutlineMail />
-                        </div>
+        <div id='home' className='w-full h-screen'>
+            <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-start items-center'>
+                <div>
+                    <h1 className='py-4 text-gray-700'>
+                        {name.map((el, i) => (
+                                <motion.span
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{
+                                    duration: 0.30,
+                                    delay: i / 10,
+                                }}
+                                key={i}
+                                >
+                                {el}{" "}
+                                </motion.span>
+                            ))}
+                    </h1>
+                    <h1 className='py-4 text-gray-700'>
+                        {jobDes.map((el, i) => (
+                                <motion.span
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{
+                                    duration: 0.30,
+                                    delay: i / 10,
+                                }}
+                                key={i}
+                                >
+                                {el}{" "}
+                                </motion.span>
+                            ))}
+                    </h1>
+                    <div className="uppercase test-sm tracking-widest text-gray-600">
+                        {text.map((el, i) => (
+                            <motion.span
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{
+                                duration: 0.30,
+                                delay: i / 10,
+                            }}
+                            key={i}
+                            >
+                            {el}{" "}
+                            </motion.span>
+                        ))}
                     </div>
-                </motion.div>
-                
+                </div>
             </div>
         </div>
     )

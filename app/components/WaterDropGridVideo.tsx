@@ -9,8 +9,8 @@ const WaterDropGrid = () => {
     )
 };
 
-const GRID_WIDTH = 80;
-const GRID_HEIGHT = 35;
+const GRID_WIDTH = 40;
+const GRID_HEIGHT = 25;
 
 const DotGrid = () => {
     const handleDotClick = (e: any) => {
@@ -60,7 +60,7 @@ const DotGrid = () => {
     return (
         <div
             style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)`}}
-            className="grid w-fit"
+            className="m-10 grid w-fit"
         >
            {dots}
         </div>

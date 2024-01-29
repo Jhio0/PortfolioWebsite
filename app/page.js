@@ -68,24 +68,32 @@ const Page = () => {
           <Main />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={offset + 0}>\
+        <ParallaxLayer offset={offset + 0}>
           <WaterDropGrid/>
         </ParallaxLayer>
 
         <ParallaxLayer offset={offset + 1}>
-          <About />
+          <div className="w-full h-auto mx-auto max-w-7xl py-10">
+            <About />
+          </div>
         </ParallaxLayer>
 
         <ParallaxLayer offset={offset + 2}>
+          <div className="w-full h-auto mx-auto max-w-7xl py-10" >
           <Skills />
+          </div>
         </ParallaxLayer>
 
         <ParallaxLayer offset={offset + 3}>
+          <div className="w-full h-auto mx-auto max-w-7xl py-10">
           <Projetcs />
+          </div>
         </ParallaxLayer>
 
         <ParallaxLayer offset={offset + 5}>
+          <div className="w-full h-auto mx-auto max-w-7xl py-10">
           <Contact />
+          </div>
         </ParallaxLayer>
       </Parallax>
     </div>

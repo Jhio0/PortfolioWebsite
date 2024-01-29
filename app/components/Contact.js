@@ -4,6 +4,7 @@ import React from 'react'
 import {AiOutlineMail} from 'react-icons/ai'
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
+import { motion} from 'framer-motion'
 
 const Contact = () => {
   return (
@@ -64,7 +65,9 @@ const Contact = () => {
                                     <label className='uppercase text-sm py-2'>Message</label>
                                     <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10'/>
                                 </div>
-                                <button className='w-full p-4 text-grey-100 mt-4'>Send Message</button>
+                                <div className='flex justify-center'>
+                                <button class="relative border-2 border-gray-800 bg-transparent py-2.5 px-20 font-medium uppercase text-gray-800 transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-gray-800 before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100">Submit!</button>
+                                </div>
                             </form>
                         </div>
                 </div>
