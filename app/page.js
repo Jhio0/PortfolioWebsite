@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 import Projetcs from "./components/Projetcs";
 import Contact from "./components/Contact";
 
-import ThreeSister from "./components/threesister";
+import Computer from "./components/Computer";
 
 import WaterDropGrid from "./components/WaterDropGridVideo";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
@@ -17,7 +17,7 @@ const Page = () => {
   const offset = 0; // Assuming no parallax effect for Main component
 
   return (
-    <div >
+    <div>
       <Navbar />
       <Parallax pages={8} className="parallax-container">
         <ParallaxLayer speed={1} offset={offset}>
@@ -35,9 +35,15 @@ const Page = () => {
         <Projetcs />
       </div>
     
-      <div className="w-full h-auto mx-auto max-w-7xl px-4 md:px-0 py-10 md:py-16">
-        <Contact />
+      <div className="w-full h-full mx-auto max-w-7xl px-4 md:px-0 py-10 md:py-16">
+        <Contact/>
       </div>
+
+      <Parallax pages={1} className="">
+        <ParallaxLayer>
+        <Computer/>
+        </ParallaxLayer>
+      </Parallax>
     </div>
   );
 };
