@@ -1,10 +1,11 @@
 .content {
     width: 334px;
     height: 216px;
-    background: #f0f0f0;
+    background: #F3F4F6;
     border-radius: 3px;
-    overflow-x: auto;
     padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   
   .wrapper {
@@ -13,4 +14,20 @@
     height: 100%;
     transform: scale(0.5);
     transform-origin: top left;
+  }
+
+
+  @media (max-width: 768px) {
+    .mobileSize {
+      /* Margin value for screens with max width 768px */
+      margin-top: 15rem;
+      margin-bottom: 20rem; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .doNotAllowHorizontal {
+      /* Margin value for screens with max width 768px */
+     overflow-y: hidden;
+    }
   }
