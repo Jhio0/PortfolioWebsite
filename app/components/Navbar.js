@@ -40,12 +40,6 @@ const Navbar = () => {
                             <span className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-gray-800 transition-transform duration-300 ease-out group-hover:scale-x-100" />
                         </li>     
                     </Link>
-                    <Link href="/#skills">
-                        <li className='ml-10 text-sm uppercase relative group'>
-                            Skills
-                            <span className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-gray-800 transition-transform duration-300 ease-out group-hover:scale-x-100" />
-                        </li>
-                    </Link>
                     <Link href="/#project">
                         <li className='ml-10 text-sm uppercase relative group'>
                             Projects
@@ -86,9 +80,6 @@ const Navbar = () => {
                             </Link>
                             <Link href='/#about'>
                                 <li className='py-4 text-sm'>About</li>
-                            </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Skills</li>
                             </Link>
                             <Link href='/'>
                                 <li className='py-4 text-sm'>Projects</li>

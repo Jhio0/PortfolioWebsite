@@ -8,12 +8,15 @@ import Skills from "./components/Skills";
 import Projetcs from "./components/Projetcs";
 import Contact from "./components/Contact";
 
-import Computer from "./components/Computer";
+import Phone from "./components/phone";
+import TitleCard from "./components/TitleCard";
 
 import WaterDropGrid from "./components/WaterDropGridVideo";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import './components/Computer.css'
+
+
 
 const Page = () => {
   const offset = 0; // Assuming no parallax effect for Main component
@@ -30,16 +33,29 @@ const Page = () => {
       <div className="mobileSize w-full h-auto mx-auto px-4 md:px-0 py-10 md:py-16">
         <About />
       </div>
-      <div className="w-full h-auto mx-auto max-w-7xl px-4 md:px-0 py-10 md:py-16">
-        <Skills />
+
+      <div className="flex flex-col md:flex-row w-full h-auto mx-auto px-4 md:px-0 py-10 md:py-16">
+        <div className="flex items-center justify-center w-full md:w-1/2 mb-6 md:mb-0">
+          lorem
+        </div>
+        <div className="w-full">
+          <TitleCard/>
+        </div>
       </div>
-      <div className="w-full h-auto mx-auto  px-4 md:px-0 py-10 md:py-16">
-        <Projetcs />
+
+      <div className="flex flex-col-reverse md:flex-row w-full h-auto mx-auto px-4 md:px-0 py-10 md:py-16">
+        <div className="w-full">
+          <TitleCard/>
+        </div>
+        <div className="flex items-center justify-center w-full md:w-1/2 mb-6 md:mb-0">
+          lorem
+        </div>
       </div>
-    
+      
       <div className="w-full h-full mx-auto max-w-7xl px-4 md:px-0 py-10 md:py-16">
         <Contact/>
       </div>
+      <Phone/>
     </div>
   );
 };
