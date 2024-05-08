@@ -1,6 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Skills from "./Skills"
 import { FiBatteryCharging, FiWifi } from 'react-icons/fi';
+import Joke from "./joke";
+
 export default function Example() {
   return (
     <div className="ms-3 relative bg-gray-100">
@@ -19,7 +21,7 @@ export default function Example() {
               opportunities to immerse myself in real-world projects, honing my skills, and 
               evolving into a proficient software developer.
             </h3>
-            <Skills/>
+            <Joke url={'https://icanhazdadjoke.com/slack'}/>
           </div>
         </div>
       </main>
