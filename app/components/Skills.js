@@ -11,7 +11,7 @@ function Skills() {
             <div className='skill-container grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 '>
 
 
-            <Phone imageSrc='./../assets/skills/html.png' title='HTML'/>
+            <Phone imageSrc='/assets/skills/html.png' title='HTML'/>
             <Phone imageSrc='/../assets/skills/css.png' title='HTML' />
             <Phone imageSrc='/../assets/skills/javascript.png' title='HTML' />
             <Phone imageSrc='/../assets/skills/react.png' title='React' />
