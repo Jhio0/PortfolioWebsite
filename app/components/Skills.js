@@ -12,13 +12,13 @@ function Skills() {
 
 
             <Phone imageSrc='/assets/skills/html.png' title='HTML'/>
-            <Phone imageSrc='/../assets/skills/css.png' title='HTML' />
-            <Phone imageSrc='/../assets/skills/javascript.png' title='HTML' />
-            <Phone imageSrc='/../assets/skills/react.png' title='React' />
-            <Phone imageSrc='/../assets/skills/tailwind.png' title='Tailwind' />
-            <Phone imageSrc='/../assets/skills/firebase.png' title='Firebase' />
-            <Phone imageSrc='/../assets/skills/github1.png' title='Github' />
-            <Phone imageSrc='/../assets/skills/shopify.png' title='Shopify' />
+            <Phone imageSrc='/assets/skills/css.png' title='HTML' />
+            <Phone imageSrc='/assets/skills/javascript.png' title='HTML' />
+            <Phone imageSrc='/assets/skills/react.png' title='React' />
+            <Phone imageSrc='/assets/skills/tailwind.png' title='Tailwind' />
+            <Phone imageSrc='/assets/skills/firebase.png' title='Firebase' />
+            <Phone imageSrc='/assets/skills/github1.png' title='Github' />
+            <Phone imageSrc='/assets/skills/shopify.png' title='Shopify' />
             
 
                
