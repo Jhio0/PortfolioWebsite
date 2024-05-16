@@ -7,8 +7,7 @@ import {
   useSpring,
 } from "framer-motion";
 
-import Link from "next/link";
-import '../Computer.css'
+import '../../Computer.css'
 const Example = () => {
   return (
     <div id='project' className="grid w-full place-content-center bg-gradient-to-br  to-violet-500 px-4 py-12 text-slate-900">
@@ -58,7 +57,7 @@ const TiltCard = () => {
  
 
   return (
-    <Link href="./Projects">
+    <div>
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
@@ -86,7 +85,7 @@ const TiltCard = () => {
           </p>
         </div>
       </motion.div>
-    </Link>
+    </div>
   );
 };
 

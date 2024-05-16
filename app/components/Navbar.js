@@ -29,9 +29,13 @@ const Navbar = () => {
     return (
         <div className={shadow ? 'fixed w-full h-20 shadows-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <Link href='/'>
-                <button className="relative -top-1 -left-1 bg-gray-800 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0">My Resume</button>
-                </Link>
+                
+                <button className="relative -top-1 -left-1 bg-gray-800 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0">
+                    <Link href="https://drive.google.com/file/d/1JTMlIMKqjgE2z6Vz_l_SlBl3vFUBpYCz/view" target="_blank" rel="noopener noreferrer">
+                        My Resume
+                    </Link>
+                </button>
+                
                 <div>
                     <ul className='hidden md:flex'>
                     <Link href="/#about" >
@@ -71,20 +75,21 @@ const Navbar = () => {
                     </div>
 
                     <div className='border-b border-gray-300 my-4'>
-                        <p className='w-[58%] md:w-[90%] py-4'>Lets build something legendary together</p>
+                        <p className='w-[110%] md:w-[90%] py-4'>Lets build something legendary together</p>
                     </div>
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase'>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Home</li>
-                            </Link>
                             <Link href='/#about'>
-                                <li className='py-4 text-sm'>About</li>
+                                <li className='py-4 text-sm'>
+                                    About
+                                    <span className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-gray-800 transition-transform duration-300 ease-out group-hover:scale-x-100" />
+                                </li>
+                                
                             </Link>
-                            <Link href='/'>
+                            <Link href='/#project'>
                                 <li className='py-4 text-sm'>Projects</li>
                             </Link>
-                            <Link href='/'>
+                            <Link href='/#contact'>
                                 <li className='py-4 text-sm'>Contacts</li>
                             </Link>
                         </ul>
