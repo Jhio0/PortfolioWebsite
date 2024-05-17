@@ -61,3 +61,11 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   /* You can add more properties as per your requirement */
 }
+
+.backgroundforStyle{
+  background-image: url('../../public/assets/projects/project3Style/img1.png');
+  /* You can also specify additional properties like background size, repeat, position, etc. */
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  /* You can add more properties as per your requirement */
+}

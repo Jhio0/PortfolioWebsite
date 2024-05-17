@@ -12,7 +12,7 @@ const SpringModal = ({ isOpen, setIsOpen, content }) => {
     if (!content) {
         return null; // Return null if content is null
     }
-    const { title, description, techStack, deployment, slides } = content;
+    const { title, description, techStack, deployment, githubUrl, slides } = content;
 
     return (
         <AnimatePresence>
@@ -53,7 +53,9 @@ const SpringModal = ({ isOpen, setIsOpen, content }) => {
                                         ))}
                                     </div>
                                     <div className="linkToWebsite">Deployment:</div>
-                                    <Link href="https://carbon-foot-print-capstone.vercel.app/" className="linkToWebsite-underline">{deployment}</Link>
+                                    <Link href={deployment} className="linkToWebsite-underline">{deployment}</Link>
+                                    <div className="linkToWebsite">GitHubURL:</div>
+                                    <Link href={githubUrl} className="linkToWebsite-underline">{githubUrl}</Link>
                                 </div>
                             </div>
                         </div>

@@ -73,7 +73,7 @@ const TiltCard = () => {
             transform: "translateZ(75px)",
             transformStyle: "preserve-3d",
           }}
-          className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
+          className="backgroundforStyle absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
         >
           <p
             style={{
@@ -81,7 +81,6 @@ const TiltCard = () => {
             }}
             className="text-center text-2xl font-bold"
           >
-            HOVER ME
           </p>
         </div>
       </motion.div>

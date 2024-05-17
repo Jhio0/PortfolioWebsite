@@ -11,8 +11,8 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 //projects
 import TitleCard from './components/projects/titleCards/planeTitleCard'
 import CapTitleCard from './components/projects/titleCards/CapstoneTitleCard'
-import StyleTitleCard from './components/projects/titleCards/CapstoneTitleCard'
-import WeatherAppTitleCard from './components/projects/titleCards/CapstoneTitleCard'
+import StyleTitleCard from './components/projects/titleCards/StylesTitlteCard'
+import WeatherAppTitleCard from './components/projects/titleCards/WeatherAppTiltleCard'
 
 import SpringModal from './components/projects/modal'
 import {project1Content ,project2Content, project3Content, project4Content} from './components/projects/contentFiles'
